@@ -83,9 +83,9 @@ namespace TelegramBotCourseCurrency.Service
                             var cnyCourseBuy = cnyCourse - 1;
                             var cnyCourseSell = cnyCourse + 4;
                             strBuilder.AppendLine($"🇨🇳 CNY {cnyCourseBuy} - {cnyCourseSell}\n1¥ - 999¥\n");
-                            strBuilder.AppendLine($"🇨🇳 CNY {cnyCourseBuy} - {cnyCourseSell - 0.2}\n1000¥ - 4999 ¥\n");
-                            strBuilder.AppendLine($"🇨🇳 CNY {cnyCourseBuy} - {cnyCourseSell - 0.3}\n5000¥ - 9999¥\n");
-                            strBuilder.AppendLine($"🇨🇳 CNY {cnyCourseBuy} - {cnyCourseSell - 0.5}\n10000 ¥-100000¥\n");
+                            strBuilder.AppendLine($"🇨🇳 CNY {cnyCourseBuy} - {(cnyCourseSell - 0.2).ToString("0.00")}\n1000¥ - 4999 ¥\n");
+                            strBuilder.AppendLine($"🇨🇳 CNY {cnyCourseBuy} - {(cnyCourseSell - 0.3).ToString("0.00")}\n5000¥ - 9999¥\n");
+                            strBuilder.AppendLine($"🇨🇳 CNY {cnyCourseBuy} - {(cnyCourseSell - 0.5).ToString("0.00")}\n10000 ¥-100000¥\n");
                         }
                     }
                     else continue; 
